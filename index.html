@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>CROSSBLOX</title>
+<title>CROSSBLOCKS</title>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <style>
@@ -26,15 +26,15 @@ button{
 <body>
   <h1>CROSSBLOCKS</h1>
   <div id="input" >
-    width&nbsp;&nbsp;<input id="w" type="text" value="10" size=4><br/>
-    height&nbsp;<input id="h" type="text" value="10" size=4><br/>
+    width&nbsp;&nbsp;<input id="w" type="text" value="10" size=4 pattern="[0-9]{1,2}"><br/>
+    height&nbsp;<input id="h" type="text" value="10" size=4 pattern="[0-9]{1,2}"><br/>
     <button onclick="showBlox(w.value, h.value)">Go</button>
   </div>
   <div id="blox" ></div>
   <script>
   var svg = d3.select("#blox").append("svg")
-    .attr("height", 500)
-    .attr("width", 500);
+    .attr("height", 700)
+    .attr("width", 700);
 
 
 
