@@ -61,7 +61,11 @@ button{
         if(d.c==0){return "#000000";}
         if(d.c==1){return "#FFFFFF";}
       })
-      .attr("stroke", "grey");
+      .attr("stroke", "grey")
+      .on("click", function(){
+        console.log("click");
+        d3.select(this).attr("fill", "red");
+      });
   }
   showBlox(10,10);
   </script>
